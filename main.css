@@ -1,0 +1,104 @@
+*,*::after,*::before {
+  box-sizing: border-box;
+}
+
+body, main, section, form {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body, main {
+  position: relative;
+}
+
+body, section, form {
+  flex-direction: column;
+}
+
+section {
+  margin: 25px 50px;
+}
+
+main {
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+h1 {
+  color: darkslategrey;
+}
+
+aside {
+  position: absolute;
+  left: 0;
+  top: 60%;
+  bottom: 40%;
+  text-align: center;
+  margin-left: 6%;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.accessible-text {
+  width: 225px;
+}
+
+.keydown-hello {
+  text-transform: uppercase;
+  color: white;
+  background: blue;
+  margin-right: 5px;
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
+h2 {
+  color: darkslateblue;
+}
+
+#countdown {
+  font-size: 32px;
+  font-weight: 900;
+  border: 2px blue solid;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#submit {
+  margin-bottom: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: darkslategray;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  padding: 10px 30px;
+}
+
+.btn:active {
+  padding: 10px 30px;
+  color: yellow;
+}
+
+footer {
+  margin: 30px 20px 10px 20px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script type="text/javascript" src="script.js" defer></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Pre-Assessment</title>
+</head>
+
+<body>
+  <header>
+    <h1>Pre Assessment</h1>
+  </header>
+
+  <!-- Hidden empty heading elements -->
+  <aside>
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+  </aside>
+  <main>
+    <section class="column">
+      <!-- Give button keyboard accessible (keyboard) JS click handler -->
+      <h2>Button Accessibility</h2>
+      <p class="is-hidden accessible-text" id="accessible_text">This button is now accessible. Use <em>tab</em> to navigate to it. Use  <em>space</em> and <em>enter</em> to interact with it.</p>
+      <div id="accessibleDiv" class="btn">click</div>
+
+      <!-- Assign role=presentation to these heading elements -->
+      <h2>Heading Accessibility</h2>
+      <p class="is-hidden accessible-text" id="role_text">The once empty heading now have a text of 'Empty Heading' and a <b>role attribute</b> of <em>presentation</em>.</p>
+      <button class="btn" id="set_role">set role</button>
+    </section>
+    <section>
+
+      <!-- Add any two given integers and countdown from sum to 0, inclusive -->
+      <h2>Sum Countdown</h2>
+      <div role="timer" id="countdown">0</div>
+      <h3>Enter two integers.</h3>
+      <h3>Press Start to begin the timer.</h3>
+      <form action="">
+        <label for="intOne">Integer 1:</label>
+        <input type="text" name="intOne" id="int_one"><br>
+        <label for="intTwo">Integer 2:</label>
+        <input type="text" name="intTwo" id="int_two"><br>
+        <input class="btn" type="submit" id="start_timer" value="Countdown">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <!-- Show button is accessible by keydown using 'space' or 'enter'; append 'hello' -->
+  </footer>
+</body>
+
+</html>
